@@ -17,6 +17,8 @@ run:
 
     ip addr
 
+    echo "Public IP is: `curl -s http://ip.ruanbekker.com`"
+
     ls
     cd fun-with-concourse/app
 
