@@ -11,5 +11,5 @@ npm install -g forever
 
 forever start app.js
 
-curl http://127.0.0.1:3000
+curl 0.0.0.0:3000
 
