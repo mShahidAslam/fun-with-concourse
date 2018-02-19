@@ -26,4 +26,4 @@ run:
 
     forever start app.js
 
-    curl 0.0.0.0:3000
+    curl -v 0.0.0.0:3000
