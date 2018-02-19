@@ -19,7 +19,6 @@ run:
 
     MY_ADDRESS=`hostname --ip-address`
 
-    ls
     cd fun-with-concourse/app
 
     npm install
@@ -28,6 +27,6 @@ run:
 
     forever start app.js
 
-    sleep 30
+    sleep 5
 
-    curl -v http://${MY_ADDRESS}:3000
+    curl http://${MY_ADDRESS}:3000
