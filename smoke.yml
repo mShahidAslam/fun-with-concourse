@@ -28,6 +28,6 @@ run:
 
     forever start app.js
 
-    sleep 10s
+    sleep 30
 
     curl -v http://${MY_ADDRESS}:3000
