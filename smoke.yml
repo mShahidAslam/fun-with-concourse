@@ -14,7 +14,6 @@ run:
   - -c
   - |
     set -ex
-    ip=$(cat instance/ip)
 
     ls
     cd fun-with-concourse/app
