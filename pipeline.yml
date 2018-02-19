@@ -3,7 +3,7 @@ resources:
 - name: fun-with-concourse
   type: git
   source:
-    uri: https://github.com/zariye/fun-with-concourse.git
+    uri: https://github.com/mShahidAslam/fun-with-concourse.git
     branch: master
 
 jobs:
