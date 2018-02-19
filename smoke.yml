@@ -9,4 +9,20 @@ inputs:
   - name: fun-with-concourse
 
 run:
-  path: fun-with-concourse/app/smoke.sh
+  path: bash
+  args:
+  - -c
+  - |
+    set -ex
+    ip=$(cat instance/ip)
+
+    ls
+    cd fun-with-concourse/app
+
+    npm install
+    npm build
+    npm install -g forever
+
+    forever start app.js
+
+    curl http://127.0.0.1:3000
