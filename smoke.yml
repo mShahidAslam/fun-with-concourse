@@ -17,7 +17,7 @@ run:
 
     ip addr
 
-    echo "Public IP is: `curl -s http://ip.ruanbekker.com`"
+    MY_ADDRESS=`hostname --ip-address`
 
     ls
     cd fun-with-concourse/app
@@ -28,4 +28,4 @@ run:
 
     forever start app.js
 
-    curl -v 0.0.0.0:3000
+    curl -v ${MY_ADDRESS}:3000
